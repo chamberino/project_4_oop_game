@@ -4,7 +4,7 @@
 /* Variables */
 
 :root {
-  --color-win: #78CF82;
+  --color-win: #1DACE8;
   --color-lose: #D94545;
   --color-start: #5b85b7;
   --color-neutral: #445069;
@@ -28,6 +28,7 @@ body {
   flex-direction: column;
   display: flex;
   height: 100vh;
+  background-color: #81c98f;
 }
 
 li, ol, ul {
@@ -99,8 +100,11 @@ button {
   padding: 20px 1px 0 1px;
   margin-right: 2px;
   color: transparent;
-  background: var(--color-neutral-light);
+  background: #fff;
+  /* var(--color-neutral-light); */
   border-radius: 5px;
+  z-index: -100;
+  transition: 300ms linear 0s;
 }
 
 .space {
@@ -118,6 +122,7 @@ button {
   padding: 20px 1px 0 1px;
   margin-right: 2px;
   border-radius: 5px;
+  transform: rotate(-360deg);
   -webkit-animation-duration: .5s;
   animation-duration: .5s;
 }
@@ -173,6 +178,7 @@ button {
   left: 0;
   right: 0;
   border-radius: 5px;
+  z-index: 100;
 }
 
 .title {
